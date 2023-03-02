@@ -81,3 +81,11 @@ nextBtn.addEventListener("click",  () => {
   // console.log('currentItem', reviews[currentItem]);
   showReview(currentItem);
 });
+
+prevBtn.addEventListener("click",  () => {
+  currentItem--;
+  if (currentItem < 0) {
+    currentItem = reviews.length - 1;
+  }
+  showReview(currentItem);
+});
