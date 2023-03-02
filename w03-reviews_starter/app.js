@@ -2,10 +2,12 @@
 const reviews = [
   {
     id: 1,
-    name: 'susan smith',
-    job: 'web developer',
-    img: 'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg',
-    text: "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+    name: "susan smith",
+    job: "web developer",
+    img:
+      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
+    text:
+      "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry"
   },
   {
     id: 2,
@@ -28,6 +30,13 @@ const reviews = [
     img: 'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
     text: 'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
   },
+  {
+    id: 5,
+    name: '黃俊凱',
+    job: '還沒有工作的前端工程師',
+    img: 'https://obsbeppzfkkzhooliozs.supabase.co/storage/v1/object/public/demo-93/md_img/w03/rickroll_4k.jpg',
+    text: '目前只是個普通的大學生而已'
+  },
 ];
 
 const img = document.querySelector('#person-img');
@@ -38,3 +47,15 @@ const info = document.querySelector('#info');
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 const randomBtn = document.querySelector('.random-btn');
+
+let currentItem = 0;
+
+window.addEventListener('DOMContentLoaded',  () => {
+  const item = reviews[currentItem];
+  console.log('item', item);
+  img.src = item.img;
+  author.textContent = item.name;
+  job.textContent = item.job;
+  info.textContent = item.text;
+});
+
