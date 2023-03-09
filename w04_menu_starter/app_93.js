@@ -98,7 +98,7 @@ const menu = [
   {
     id: 13,
     title: 'meat ball',
-    category: 'dinner',
+    category: 'dessert',
     price: 30.99,
     img: 'https://obsbeppzfkkzhooliozs.supabase.co/storage/v1/object/public/demo-93/md_img/w04/img/emiliano-vittoriosi-OFismyezPnY-unsplash.jpg?t=2023-03-09T11%3A59%3A55.004Z',
     desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
