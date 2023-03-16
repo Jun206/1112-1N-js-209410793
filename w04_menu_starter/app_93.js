@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 const displayMenuItems = (menuItems) => {
   let displayMenu = menuItems.map((item) => {
+    // console.log(item);
     return `<article class="menu-item">
             <img src=${item.img} class="photo" alt=${item.title} />
             <div class="item-info">
@@ -23,9 +24,9 @@ const displayMenuItems = (menuItems) => {
             </div>
           </article>`;
   });
-  console.log('displayMenu before join', displayMenu);
+  //console.log('displayMenu before join', displayMenu);
   displayMenu = displayMenu.join('');
-  console.log('displayMenu after join', displayMenu);
+  //console.log('displayMenu after join', displayMenu);
   sectionCenter.innerHTML = displayMenu;
 };
 
@@ -50,19 +51,23 @@ const displayMenuButtons = () => {
 
   container.innerHTML = categoryBtns;
   const filterBtns = container.querySelectorAll('.filter-btn');
+  console.log('filterBtns', filterBtns);
 
   filterBtns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
+      console.log('data-id',e.currentTarget.dataset.id);
       const category = e.currentTarget.dataset.id;
-      const menuCategory = menu.filter((menuItem) => {
+      const filterMenu = menu.filter((menuItem) => {
         if (menuItem.category === category) {
           return menuItem;
         }
       });
       if (category === 'all') {
+        console.log('all',menu);
         displayMenuItems(menu);
       } else {
-        displayMenuItems(menuCategory);
+        console.log(category,filterMenu);
+        displayMenuItems(filterMenu);
       }
     });
   });
