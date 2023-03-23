@@ -26,3 +26,4 @@ console.log('students2 sorted', students2);
 
 console.log(`The lowest score: ${students2[0].score}`);
 console.log(`The highest score: ${students[students2.length-1]}`);
+
