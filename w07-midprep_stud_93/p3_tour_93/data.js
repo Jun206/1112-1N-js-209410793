@@ -1,0 +1,42 @@
+export const tours = [
+  {
+    id: 1,
+    name: 'Best of Paris in 7 Days Tour',
+    image: './img/paris.jpg',
+    local_img: '',
+    price: '1,995',
+    info: 'Paris is synonymous with the finest things that culture can offer — in art, fashion, food, literature, and ideas. On this tour, your Paris-savvy Rick Steves guide will immerse you in the very best of ...',
+  },
+  {
+    id: 2,
+    name: 'Best of Ireland in 14 Days Tour',
+    image: './img/ireland.jpeg',
+    local_img: '',
+    price: '3,895',
+    info: 'Rick Steves Best of Ireland tour kicks off with the best of Dublin, followed by Irelands must-see historical sites, charming towns, music-filled pubs, and seaside getaways — including Kinsale, the D...',
+  },
+  {
+    id: 3,
+    name: 'Best Of Salzburg & Vienna In 8 Days Tour',
+    image: './img/vienna.jpeg',
+    local_img: '',
+    price: '2,695',
+    info: 'Let is go where classical music, towering castles, and the-hills-are-alive scenery welcome you to the gemütlichkeit of Bavaria and opulence of Austrias Golden Age. Your Rick Steves guide will bring th...',
+  },
+  {
+    id: 4,
+    name: 'Best Of Rome In 7 Days Tour',
+    image: './img/poland.jpeg',
+    local_img: '',
+    price: '2,095',
+    info: 'Our Rome tour serves up Europes most intoxicating brew of dazzling art, earth-shaking history, and city life with style. On this Rome vacation, your tour guide will resurrect the grandeur of ancient ...',
+  },
+  {
+    id: 5,
+    name: 'Best Of Poland In 10 Days Tour',
+    image: './img/poland.jpeg',
+    local_img: '',
+    price: '2,595',
+    info: 'Starting in the colorful port city of Gdańsk, you will escape the crowds and embrace the understated elegance of ready-for-prime-time Poland for 10 days. With an expert Rick Steves guide at your side, y...',
+  },
+];
