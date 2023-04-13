@@ -1,5 +1,3 @@
-const bmi_data_93 = [];
-
 function bmiCalc(height, weight) {
   return weight / (height * height);
 }
@@ -9,9 +7,9 @@ function bmiCalcResult(height, weight) {
   console.log(`For (h/w) = (${height}/${weight}), the BMI = ${bmi}`)
 }
 
-bmiCalcResult(1.75, 55);
+/*bmiCalcResult(1.75, 55);
 bmiCalcResult(1.75, 70);
-bmiCalcResult(1.75, 85);
+bmiCalcResult(1.75, 85);*/
 
 function bmi_normal_low(height) {
   return 18.5 * height * height;
@@ -44,6 +42,51 @@ function bmiCalcSuggest(height, weight) {
   }
 }
 
-bmiCalcSuggest(1.75, 55);
+/*bmiCalcSuggest(1.75, 55);
 bmiCalcSuggest(1.75, 70);
-bmiCalcSuggest(1.75, 85);
+bmiCalcSuggest(1.75, 85);*/
+
+const bmi_data_93 = [
+  {height:1.75,weight:55},
+  {height:1.75,weight:70},
+  {height:1.75,weight:85}
+];
+
+bmi_data_93.forEach((item) => {
+  bmiCalcSuggest(item.height, item.weight);
+});
+
+let lowCount = 0;
+let normalCount = 0;
+let higherCount = 0;
+
+const bmi_data2_93 = [
+    {height: 1.75, weight: 55},
+    {height: 1.75, weight: 70},
+    {height: 1.75, weight: 85},
+    {height: 1.75, weight: 50},
+    {height: 1.75, weight: 75},
+    {height: 1.75, weight: 90},
+    {height: 1.75, weight: 80},
+    {height: 1.75, weight: 65},
+    {height: 1.75, weight: 73},
+    {height: 1.75, weight: 72}
+];
+
+bmi_data2_93.forEach((item) => {
+    const bmi = bmiCalc(item.height, item.weight);
+    if( bmi < 18.5) {
+        lowCount++;
+    } else if( bmi <= 24) {
+        normalCount++;
+    }else {
+        higherCount++;
+    }
+});
+
+console.log(`
+bmi summary:
+    lower: ${lowCount}
+    normal: ${normalCount}
+    higher: ${higherCount}
+`)
