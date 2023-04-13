@@ -26,7 +26,7 @@ Variables
   --clr-primary-9: hsl(205, 90%, 88%);
   --clr-primary-10: hsl(205, 100%, 96%);
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-1: #102a42;
   --clr-grey-2: hsl(211, 39%, 23%);
   --clr-grey-3: hsl(209, 34%, 30%);
   --clr-grey-4: hsl(209, 28%, 39%);
@@ -38,9 +38,9 @@ Variables
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-dark: #bb2525;
   --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-dark: #25bb32;
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
   --ff-primary: "Roboto", sans-serif;
@@ -162,7 +162,7 @@ main {
   display: grid;
   place-items: center;
 }
-#container {
+.container {
   text-align: center;
 }
 #value {
@@ -187,49 +187,4 @@ main {
 .btn:hover {
   color: var(--clr-white);
   background: var(--clr-black);
-}
-#decreaseBtn{
-  text-transform: uppercase;
-  background: transparent;
-  color: var(--clr-black);
-  padding: 0.375rem 0.75rem;
-  letter-spacing: var(--spacing);
-  display: inline-block;
-  transition: var(--transition);
-  font-size: 0.875rem;
-  border: 2px solid var(--clr-black);
-  cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: var(--radius);
-  margin: 0.5rem;
-}
-#resetBtn{
-  text-transform: uppercase;
-  background: transparent;
-  color: var(--clr-black);
-  padding: 0.375rem 0.75rem;
-  letter-spacing: var(--spacing);
-  display: inline-block;
-  transition: var(--transition);
-  font-size: 0.875rem;
-  border: 2px solid var(--clr-black);
-  cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: var(--radius);
-  margin: 0.5rem;
-}
-#increaseBtn{
-  text-transform: uppercase;
-  background: transparent;
-  color: var(--clr-black);
-  padding: 0.375rem 0.75rem;
-  letter-spacing: var(--spacing);
-  display: inline-block;
-  transition: var(--transition);
-  font-size: 0.875rem;
-  border: 2px solid var(--clr-black);
-  cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: var(--radius);
-  margin: 0.5rem;
 }
