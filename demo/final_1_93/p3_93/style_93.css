@@ -49,13 +49,13 @@ input[type='text'] {
     border-bottom-right-radius: 4px;
 }
 
-.meals {
+.cocktails {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
 }
 
-.meal {
+.cocktail {
     height: 180px;
     width: 180px;
     cursor: pointer;
@@ -63,7 +63,7 @@ input[type='text'] {
     text-align: center;
 }
 
-.meal img {
+.cocktail img {
     height: 100%;
     width: 100%;
     border: 4px #fff solid;
@@ -71,7 +71,7 @@ input[type='text'] {
 
 }
 
-.meal-info{
+.cocktail-info{
     position: absolute;
     top: 0;
     left: 0;
@@ -85,27 +85,27 @@ input[type='text'] {
     transition: opacity 0.2s ease-in;
 }
 
-.meal:hover .meal-info{
+.cocktail:hover .cocktail-info{
     opacity: 1;
 }
 
-.single-meal {
+.single-cocktail {
     margin: 30px auto;
     width: 70%;
 }
 
-.single-meal img {
+.single-cocktail img {
     width: 300px;
     border: 4px #fff solid;
     border-radius: 2px;
 }
 
-.single-meal ul {
+.single-cocktail ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-.single-meal ul li {
+.single-cocktail ul li {
     background-color: #fff;
     color: #2d2013;
     display: inline-block;
@@ -118,19 +118,19 @@ input[type='text'] {
 }
 
 @media (max-width: 800px){
-    .meals {
+    .cocktails {
         grid-template-columns: repeat(3, 1fr);
     }  
 }
 
 @media (max-width: 650px){
-    .meals {
+    .cocktails {
         grid-template-columns: repeat(2, 1fr);
     }  
 }
 
 @media (max-width: 500px){
-    .meals {
+    .cocktails {
         grid-template-columns: 1fr;
     }  
 }
